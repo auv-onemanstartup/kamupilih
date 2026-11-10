@@ -4,9 +4,7 @@
  "winnerLabel": "BILANG KE IBU",
  "clock": "02.16",
  "vote": {
-  "mode": "vote",
-  "a": 70,
-  "b": 30,
+  "mode": "auto",
   "labelA": "BILANG KE IBU",
   "labelB": "PURA-PURA TIDUR"
  },

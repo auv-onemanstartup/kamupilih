@@ -226,7 +226,7 @@ function sVote(ctx, u, IMG) {
   } else {
     // honest auto-pick hooks (no screenshot = no real count, so never show numbers), rotated per part
     const HOOKS = [['KALIAN DIEM AJA...', 'JADI AKU YANG MILIH.'], ['TEBAKANKU', 'KALIAN BAKAL MILIH INI.'], ['KOMEN KALIAN KEBAGI,', 'JADI AKU YANG MUTUSIN.']];
-    const [h1, h2] = HOOKS[TL.part % HOOKS.length];
+    const [h1, h2] = HOOKS[(TL.part + 1) % HOOKS.length];
     HX.title(ctx, u, h1, -0.6, 560, 92, C.bone);
     HX.title(ctx, u, h2, 0.7, 700, 92, C.bone);
   }

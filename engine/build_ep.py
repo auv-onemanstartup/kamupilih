@@ -67,6 +67,10 @@ def main(spec_path):
     ep = json.loads(Path(spec_path).read_text())
     part = ep["part"]; nxt = part + 1
     beats = [dict(b) for b in ep["beats"]]
+    if ep["vote"]["mode"] == "auto":       # honesty: when Claude picked, the story must not say the viewers did
+        SWAP = {"kalian yang milih ini.": "aku yang milih ini.", "kalian lagi yang milih ini.": "kali ini aku yang milih.",
+                "jadi kalau ada apa-apa... jangan salahin aku.": "jadi kalau ada apa-apa... salahin aku aja."}
+        for b in beats: b["text"] = SWAP.get(b["text"], b["text"])
     ch = ep["choice"]
     # standard tail: pause, choice, call to action
     tail = [

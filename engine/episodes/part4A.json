@@ -1,0 +1,24 @@
+{
+  "part": 4, "branch": "A", "winnerLabel": "TELEPON IBU LAGI", "clock": "02.31",
+  "vote": {"mode": "auto", "labelA": "TELEPON IBU LAGI", "labelB": "BUKA PINTUNYA"},
+  "beats": [
+    {"text": "kalian lagi yang milih ini.", "shot": {"type": "phone", "ui": "call"}, "events": ["dial@0.2"]},
+    {"text": "kamu telepon ibu lagi."},
+    {"text": "nada sambung...", "dur": 2.4},
+    {"text": "kali ini, nggak ada bunyi dari balik pintu.", "shot": {"type": "plate", "img": "gapClose", "from": [470, 900, 1.05], "to": [560, 980, 1.35], "fx": ["dust", "fog"], "dark": 0.25}, "events": ["dialStop@end"]},
+    {"text": "diangkat.", "shot": {"type": "phone", "ui": "call"}, "events": ["pickup@0.3"]},
+    {"text": "“halo? nak? ini ibu... ada apa?”"},
+    {"text": "suaranya beda. serak, baru bangun."},
+    {"text": "kamu ceritain semuanya."},
+    {"text": "ibu diem lama.", "dur": 2.6},
+    {"text": "“nak... hp ibu ilang dari sore.”"},
+    {"text": "“ini ibu pakai hp bapak.”", "hold": 0.3},
+    {"text": "terus... dari balik pintu, hp itu bunyi lagi.", "shot": {"type": "plate", "img": "gapClose", "from": [470, 900, 1.1], "to": [610, 990, 2.0], "fx": ["ring", "dust"], "ringBase": 0.3, "hand": 0.8}, "events": ["ring@0.3"]},
+    {"text": "hp ibu."},
+    {"text": "yang ilang dari sore."},
+    {"text": "ada di depan kamar kamu.", "red": true, "events": ["silence@end"]}
+  ],
+  "choice": {"a": "ambil hp itu lewat celah pintu", "b": "telepon ibu kos, minta tolong",
+             "labelA": "AMBIL\nHP-NYA", "labelB": "TELEPON\nIBU KOS",
+             "cardA": ["gapClose", [190, 320, 560, 1109]], "cardB": ["phone", [170, 640, 560, 1109]]}
+}
