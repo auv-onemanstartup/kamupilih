@@ -45,10 +45,14 @@ Season 2 can start in a new place (rumah ibu? asrama?) with the same entity rule
 - Ibu is 300 km away in the village. Village light went out in Part 1.
 - Part 2B: you called ibu at ~02.14; ibu's ringtone (same tune for years) rang behind your door; ibu answered
   sleepy "halo nak? ibu di rumah. kenapa telepon jam segini?" and the voice behind the door said the same words with her.
-- Part 3: (fill in after it airs) A = bilang ke ibu ada yang di depan pintu, B = tutup telepon pura-pura tidur.
+- Part 3 (A, auto-picked): you whispered "bu... ada yang di depan pintu." The voice on the call: "nak... ibu tahu. ibu juga lagi
+  berdiri di depan pintu." Three knocks on your door, heard on the call at the same moment. You hung up; the call log shows
+  "ibu · panggilan keluar · 00:00" at 02.15: the call never connected. The phone outside your door was glowing; its light died.
+  Choice for Part 4: A = telepon ibu lagi, sekarang / B = buka pintunya, lihat sendiri.
 
 ## Episode log
 | part | branch | posted | permalink | votes |
 |---|---|---|---|---|
 | 1 | – | 2026-11-03 21:00 | https://www.instagram.com/reel/DfSDGuEP2tc/ | – |
 | 2 | B telepon ibu | 2026-11-09 08:50 | https://www.instagram.com/reel/DfgHPeEhOE_/ | A 1 · B 7 |
+| 3 | A bilang ke ibu | 2026-11-10 21:00 | https://www.instagram.com/reel/DfkEntKoLDr/ | auto (no screenshot) |
