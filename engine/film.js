@@ -224,8 +224,11 @@ function sVote(ctx, u, IMG) {
     HX.title(ctx, u, 'KALIAN PILIH', -0.45, 590, 110, C.bone);
     HX.voteBar(ctx, u, 0.4, { a: V.a, b: V.b, y: 800, labelA: V.labelA, labelB: V.labelB });
   } else {
-    HX.title(ctx, u, 'KALIAN DIEM AJA...', -0.6, 560, 92, C.bone);
-    HX.title(ctx, u, 'JADI AKU YANG MILIH.', 0.7, 700, 92, C.bone);
+    // honest auto-pick hooks (no screenshot = no real count, so never show numbers), rotated per part
+    const HOOKS = [['KALIAN DIEM AJA...', 'JADI AKU YANG MILIH.'], ['TEBAKANKU', 'KALIAN BAKAL MILIH INI.'], ['KOMEN KALIAN KEBAGI,', 'JADI AKU YANG MUTUSIN.']];
+    const [h1, h2] = HOOKS[TL.part % HOOKS.length];
+    HX.title(ctx, u, h1, -0.6, 560, 92, C.bone);
+    HX.title(ctx, u, h2, 0.7, 700, 92, C.bone);
   }
   const k = springU(u, 1.6, SPRING.snappy);
   if (k > 0) {
