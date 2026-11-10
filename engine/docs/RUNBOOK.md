@@ -1,12 +1,12 @@
 # KAMU PILIH daily runbook (fully automatic; the user only optionally sends comment screenshots)
 
-Fired every day at 18:00 WIB by a scheduled message in this session. Posting at 21:00 WIB. The user has
+Fired every day at 18:00 WIB by a scheduled message in this session (a one-shot that each run re-schedules for the next day). Posting at 21:00 WIB. The user has
 given standing approval (2026-11-10) for automatic production and posting, offline narrator (engine/tts), auto-pick when
 there is no screenshot, and GitHub hosting. Use SendUserMessage only for: the posted link, and blockers.
 
 ## 0. Workspace
 - Project: `/home/claude/kamupilih` (engine in `engine/`). If it is missing: clone the GitHub repo
-  (`git clone https://github.com/<user>/kamupilih /home/claude/kamupilih`), else ask the user to upload
+  (`git clone https://github.com/auv-onemanstartup/kamupilih /home/claude/kamupilih`), else ask the user to upload
   `kamupilih_toolkit.zip` + `kamupilih_aset.zip`.
 - Read `engine/docs/STORY_BIBLE.md` (rules, arc, facts, episode log) and `EPISODE_FORMAT.md`.
 - Narrator engine (not in git, too big). If `engine/tts/sherpa-onnx-offline-tts` or `engine/tts/voice/` is
@@ -34,8 +34,8 @@ there is no screenshot, and GitHub hosting. Use SendUserMessage only for: the po
 - Check audio: silence window ≤ −80 dB, overall −14 LUFS (mix.mjs prints it).
 
 ## 3. Host + post (21:00)
-- Commit the MP4 to the GitHub repo under `videos/` and push. Public URL:
-  `https://raw.githubusercontent.com/<user>/kamupilih/main/videos/KamuPilih_partNX.mp4`.
+- Commit the MP4 to the GitHub repo under `videos/` and push (`git -C /home/claude/kamupilih push origin main`; verified working 2026-11-10). Public URL:
+  `https://raw.githubusercontent.com/auv-onemanstartup/kamupilih/main/videos/KamuPilih_partNX.mp4`.
   (No GitHub yet → send the MP4 with SendUserFile and ask for a Google Drive link; then use
   `https://drive.google.com/uc?export=download&id=<id>`.)
 - `vidiq_video_upload` with that URL → `videoUrl`.
