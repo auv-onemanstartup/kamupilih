@@ -112,7 +112,7 @@ function sPhone(ctx, u, IMG, i) {
     clockOverlay(ctx, timeAt(u));
     if (lit) onScreen(ctx, (box) => {
       if (s.ui === 'chat') HX.chat(ctx, u, { name: s.name || 'ibu', msgs: MSGS, typing: TYPING, status: typingStatus, now: timeAt(u), x: 22, y: 22, w: box.w - 44, h: box.h - 44 });
-      else if (s.ui === 'call') HX.callScreen(ctx, u, { name: s.name || 'ibu', ringFrom: firstEv('dial', -1) ?? a, pickUp: lastEvBefore('pickup', u) ?? null, end: lastEvBefore('hangup', u) ?? null, ...box });
+      else if (s.ui === 'call') HX.callScreen(ctx, u, { name: s.name || 'ibu', ringFrom: firstEv('dial', -1) ?? firstEv('ring', -1) ?? a, pickUp: lastEvBefore('pickup', u) ?? null, end: lastEvBefore('hangup', u) ?? null, ...box });
       else if (s.ui === 'history') callHistory(ctx, u, box, s.rows || [], firstEv('hl', a));
       else lockScreen(ctx, u, box);
     });
@@ -225,7 +225,7 @@ function sVote(ctx, u, IMG) {
     HX.voteBar(ctx, u, 0.4, { a: V.a, b: V.b, y: 800, labelA: V.labelA, labelB: V.labelB });
   } else {
     // honest auto-pick hooks (no screenshot = no real count, so never show numbers), rotated per part
-    const HOOKS = [['KALIAN DIEM AJA...', 'JADI AKU YANG MILIH.'], ['TEBAKANKU', 'KALIAN BAKAL MILIH INI.'], ['KOMEN KALIAN KEBAGI,', 'JADI AKU YANG MUTUSIN.']];
+    const HOOKS = [['KALI INI', 'AKU YANG MILIH.'], ['TEBAKANKU', 'KALIAN BAKAL MILIH INI.'], ['AKU YANG MILIH.', 'PROTES DI KOMEN.']];   // no claims about the comments we could not read
     const [h1, h2] = HOOKS[(TL.part + 1) % HOOKS.length];
     HX.title(ctx, u, h1, -0.6, 560, 92, C.bone);
     HX.title(ctx, u, h2, 0.7, 700, 92, C.bone);

@@ -1,19 +1,19 @@
 {
- "part": 3,
- "branch": "A",
- "total": 85.39,
+ "part": 4,
+ "branch": "B",
+ "total": 73.41,
  "vote": {
   "mode": "auto",
-  "labelA": "BILANG KE IBU",
-  "labelB": "PURA-PURA TIDUR"
+  "labelA": "TELEPON IBU LAGI",
+  "labelB": "BUKA PINTUNYA"
  },
- "clock": "02.16",
- "winnerLabel": "BILANG KE IBU",
+ "clock": "02.31",
+ "winnerLabel": "BUKA PINTUNYA",
  "choice": {
-  "a": "telepon ibu lagi, sekarang",
-  "b": "buka pintunya, lihat sendiri",
-  "labelA": "TELEPON\nIBU LAGI",
-  "labelB": "BUKA\nPINTUNYA",
+  "a": "angkat teleponnya",
+  "b": "balik badan, lihat ke kamar",
+  "labelA": "ANGKAT\nTELEPONNYA",
+  "labelB": "BALIK\nBADAN",
   "cardA": [
    "phone",
    [
@@ -24,10 +24,10 @@
    ]
   ],
   "cardB": [
-   "doorOpen",
+   "phoneBed",
    [
-    240,
-    170,
+    180,
+    300,
     560,
     1109
    ]
@@ -35,228 +35,82 @@
  },
  "beats": [
   {
-   "text": "aku yang milih ini.",
+   "text": "kali ini aku yang milih.",
    "shot": {
-    "type": "phone",
-    "ui": "call"
+    "type": "knob"
    },
    "events": [
-    "pickup@-8"
+    "turn@0.5"
    ],
    "i": 0,
-   "vo": 1.551,
+   "vo": 1.802,
    "t0": 3.4,
-   "t1": 5.77
+   "t1": 6.17
   },
   {
-   "text": "jadi kalau ada apa-apa... salahin aku aja.",
+   "text": "kamu buka pintunya.",
+   "events": [
+    "open@0.4"
+   ],
    "i": 1,
-   "vo": 3.363,
-   "t0": 6.07,
-   "t1": 10.28
+   "vo": 1.6,
+   "t0": 6.47,
+   "t1": 8.84
   },
   {
-   "text": "kamu bisik pelan:",
+   "text": "pelan-pelan.",
+   "dur": 2.0,
    "i": 2,
-   "vo": 1.404,
-   "t0": 10.58,
-   "t1": 12.79
+   "vo": 0.895,
+   "t0": 9.14,
+   "t1": 11.14
   },
   {
-   "text": "“bu... ada yang di depan pintu.”",
+   "text": "lorongnya kosong.",
    "shot": {
     "type": "plate",
-    "img": "gapWide",
-    "from": [
-     470,
-     880,
-     1.0
-    ],
-    "to": [
-     540,
-     980,
-     1.2
-    ],
-    "fx": [
-     "dust",
-     "fog"
-    ],
-    "dark": 0.2
-   },
-   "i": 3,
-   "vo": 2.205,
-   "t0": 13.09,
-   "t1": 16.5
-  },
-  {
-   "text": "telepon hening. lama.",
-   "dur": 2.8,
-   "shot": {
-    "type": "phone",
-    "ui": "call",
-    "zoom": [
-     2.15,
-     1.9
-    ]
-   },
-   "i": 4,
-   "vo": 1.665,
-   "t0": 16.8,
-   "t1": 19.6
-  },
-  {
-   "text": "“nak... ibu tahu.”",
-   "red": true,
-   "i": 5,
-   "vo": 1.663,
-   "t0": 19.9,
-   "t1": 22.19
-  },
-  {
-   "text": "“ibu juga lagi berdiri di depan pintu.”",
-   "red": true,
-   "shot": {
-    "type": "plate",
-    "img": "gapClose",
+    "img": "doorOpen",
     "from": [
      470,
      900,
-     1.05
+     1.0
     ],
     "to": [
-     600,
-     990,
-     1.6
+     505,
+     760,
+     1.5
     ],
     "fx": [
-     "ring",
+     "lamp",
      "dust",
      "fog"
     ],
-    "ringBase": 0.35
+    "hand": 0.7
    },
-   "i": 6,
-   "vo": 3.334,
-   "t0": 22.49,
-   "t1": 26.46
+   "i": 3,
+   "vo": 1.373,
+   "t0": 11.44,
+   "t1": 13.65
   },
   {
-   "text": "terus...",
-   "hold": 0.3,
-   "i": 7,
-   "vo": 0.474,
-   "t0": 26.76,
-   "t1": 28.26
+   "text": "lampu merahnya goyang sendiri.",
+   "i": 4,
+   "vo": 2.266,
+   "t0": 13.95,
+   "t1": 17.2
   },
   {
-   "text": "tok. tok. tok.",
-   "events": [
-    "knock@0.1"
-   ],
-   "dur": 2.2,
-   "i": 8,
-   "vo": 0.773,
-   "t0": 28.86,
-   "t1": 31.06
-  },
-  {
-   "text": "dan dari telepon, kamu dengar ketukan yang sama.",
-   "shot": {
-    "type": "phone",
-    "ui": "call"
-   },
-   "i": 9,
-   "vo": 3.553,
-   "t0": 31.36,
-   "t1": 36.05
-  },
-  {
-   "text": "persis bersamaan.",
-   "events": [
-    "softknock@0.2"
-   ],
-   "dur": 2.4,
-   "i": 10,
-   "vo": 1.521,
-   "t0": 36.35,
-   "t1": 38.75
-  },
-  {
-   "text": "kamu matiin teleponnya.",
-   "events": [
-    "hangup@0.6"
-   ],
-   "i": 11,
-   "vo": 1.891,
-   "t0": 39.05,
-   "t1": 41.74
-  },
-  {
-   "text": "kamu buka riwayat panggilan.",
-   "shot": {
-    "type": "phone",
-    "ui": "history",
-    "rows": [
-     {
-      "name": "ibu",
-      "kind": "panggilan keluar",
-      "dur": "00:00",
-      "time": "02.15",
-      "hl": true
-     },
-     {
-      "name": "ibu",
-      "kind": "pesan",
-      "dur": "",
-      "time": "22.00"
-     },
-     {
-      "name": "ibu",
-      "kind": "panggilan masuk",
-      "dur": "03:12",
-      "time": "kemarin"
-     }
-    ]
-   },
-   "i": 12,
-   "vo": 2.253,
-   "t0": 42.04,
-   "t1": 45.13
-  },
-  {
-   "text": "“ibu · panggilan keluar · 00:00.”",
-   "events": [
-    "hl@0.2",
-    "sub@0.2"
-   ],
-   "i": 13,
-   "vo": 3.166,
-   "t0": 45.43,
-   "t1": 48.946
-  },
-  {
-   "text": "teleponnya... nggak pernah tersambung.",
-   "events": [
-    "glitch@0.9"
-   ],
-   "i": 14,
-   "vo": 2.309,
-   "t0": 49.246,
-   "t1": 53.136
-  },
-  {
-   "text": "terus siapa yang dari tadi ngobrol sama kamu?",
-   "red": true,
+   "text": "terus kamu lihat ke bawah.",
    "shot": {
     "type": "plate",
     "img": "gapClose",
     "from": [
-     560,
-     980,
-     1.6
+     500,
+     920,
+     1.2
     ],
     "to": [
-     600,
+     620,
      990,
      2.2
     ],
@@ -264,16 +118,114 @@
      "ring",
      "dust"
     ],
-    "ringBase": 0.4
+    "ringBase": 0.45
+   },
+   "i": 5,
+   "vo": 1.861,
+   "t0": 17.5,
+   "t1": 20.43
+  },
+  {
+   "text": "hp ibu. layarnya nyala.",
+   "i": 6,
+   "vo": 1.982,
+   "t0": 20.73,
+   "t1": 23.42
+  },
+  {
+   "text": "kamu ambil.",
+   "shot": {
+    "type": "phone",
+    "ui": "call",
+    "name": "kamu"
    },
    "events": [
-    "lightOff@end",
+    "ring@0.2"
+   ],
+   "i": 7,
+   "vo": 1.015,
+   "t0": 23.72,
+   "t1": 25.45
+  },
+  {
+   "text": "ada panggilan masuk.",
+   "i": 8,
+   "vo": 1.488,
+   "t0": 25.75,
+   "t1": 28.2
+  },
+  {
+   "text": "nama yang muncul:",
+   "i": 9,
+   "vo": 1.344,
+   "t0": 28.5,
+   "t1": 30.71
+  },
+  {
+   "text": "“kamu.”",
+   "red": true,
+   "events": [
+    "sub@0.1"
+   ],
+   "i": 10,
+   "vo": 0.817,
+   "t0": 31.01,
+   "t1": 32.51
+  },
+  {
+   "text": "nomor kamu sendiri.",
+   "events": [
+    "ringStop@end"
+   ],
+   "i": 11,
+   "vo": 1.538,
+   "t0": 32.81,
+   "t1": 35.18
+  },
+  {
+   "text": "terus dari dalam kamar, di belakang kamu...",
+   "shot": {
+    "type": "plate",
+    "img": "phoneBed",
+    "from": [
+     470,
+     900,
+     1.05
+    ],
+    "to": [
+     500,
+     1000,
+     1.3
+    ],
+    "fx": [
+     "lamp",
+     "dust"
+    ],
+    "dark": 0.3,
+    "hand": 0.9
+   },
+   "i": 12,
+   "vo": 2.779,
+   "t0": 35.48,
+   "t1": 39.77
+  },
+  {
+   "text": "ada yang bisik pakai suara kamu sendiri:",
+   "i": 13,
+   "vo": 2.818,
+   "t0": 40.07,
+   "t1": 44.12
+  },
+  {
+   "text": "“jangan diangkat.”",
+   "red": true,
+   "events": [
     "silence@end"
    ],
-   "i": 15,
-   "vo": 3.036,
-   "t0": 53.436,
-   "t1": 57.886
+   "i": 14,
+   "vo": 1.538,
+   "t0": 44.42,
+   "t1": 46.71
   },
   {
    "text": "stop.",
@@ -281,67 +233,67 @@
     "type": "pause"
    },
    "hold": 0.2,
-   "i": 16,
+   "i": 15,
    "vo": 0.3,
-   "t0": 59.786,
-   "t1": 61.286
+   "t0": 48.61,
+   "t1": 50.11
   },
   {
    "text": "kelanjutannya...",
    "hold": 0.1,
-   "i": 17,
+   "i": 16,
    "vo": 1.229,
-   "t0": 61.786,
-   "t1": 63.916
+   "t0": 50.61,
+   "t1": 52.74
   },
   {
    "text": "kali ini, kalian yang nentuin.",
    "hold": 0.3,
-   "i": 18,
+   "i": 17,
    "vo": 2.465,
-   "t0": 64.316,
-   "t1": 67.566
+   "t0": 53.14,
+   "t1": 56.39
   },
   {
-   "text": "A: telepon ibu lagi, sekarang",
+   "text": "A: angkat teleponnya",
    "shot": {
     "type": "choice"
    },
    "nosuper": true,
    "card": "A",
-   "i": 19,
-   "vo": 2.534,
-   "t0": 68.166,
-   "t1": 71.336
+   "i": 18,
+   "vo": 1.464,
+   "t0": 56.99,
+   "t1": 59.44
   },
   {
-   "text": "B: buka pintunya, lihat sendiri",
+   "text": "B: balik badan, lihat ke kamar",
    "nosuper": true,
    "card": "B",
    "hold": 0.6,
-   "i": 20,
-   "vo": 2.634,
-   "t0": 71.636,
-   "t1": 74.966
+   "i": 19,
+   "vo": 2.435,
+   "t0": 59.74,
+   "t1": 62.99
   },
   {
    "text": "tulis A atau B di komentar.",
    "shot": {
     "type": "end"
    },
-   "i": 21,
+   "i": 20,
    "vo": 2.134,
-   "t0": 75.866,
-   "t1": 78.876
+   "t0": 63.89,
+   "t1": 66.9
   },
   {
-   "text": "follow biar kamu tau nasib kamu di part 4.",
+   "text": "follow biar kamu tau nasib kamu di part 5.",
    "follow": true,
    "hold": 1.4,
-   "i": 22,
-   "vo": 3.372,
-   "t0": 79.176,
-   "t1": 83.386
+   "i": 21,
+   "vo": 3.55,
+   "t0": 67.2,
+   "t1": 71.41
   }
  ],
  "shots": [
@@ -350,107 +302,42 @@
    "type": "vote"
   },
   {
-   "type": "phone",
-   "ui": "call",
+   "type": "knob",
    "t": 3.28,
    "beat": 0
   },
   {
    "type": "plate",
-   "img": "gapWide",
-   "from": [
-    470,
-    880,
-    1.0
-   ],
-   "to": [
-    540,
-    980,
-    1.2
-   ],
-   "fx": [
-    "dust",
-    "fog"
-   ],
-   "dark": 0.2,
-   "t": 12.97,
-   "beat": 3
-  },
-  {
-   "type": "phone",
-   "ui": "call",
-   "zoom": [
-    2.15,
-    1.9
-   ],
-   "t": 16.68,
-   "beat": 4
-  },
-  {
-   "type": "plate",
-   "img": "gapClose",
+   "img": "doorOpen",
    "from": [
     470,
     900,
-    1.05
+    1.0
    ],
    "to": [
-    600,
-    990,
-    1.6
+    505,
+    760,
+    1.5
    ],
    "fx": [
-    "ring",
+    "lamp",
     "dust",
     "fog"
    ],
-   "ringBase": 0.35,
-   "t": 22.37,
-   "beat": 6
-  },
-  {
-   "type": "phone",
-   "ui": "call",
-   "t": 31.24,
-   "beat": 9
-  },
-  {
-   "type": "phone",
-   "ui": "history",
-   "rows": [
-    {
-     "name": "ibu",
-     "kind": "panggilan keluar",
-     "dur": "00:00",
-     "time": "02.15",
-     "hl": true
-    },
-    {
-     "name": "ibu",
-     "kind": "pesan",
-     "dur": "",
-     "time": "22.00"
-    },
-    {
-     "name": "ibu",
-     "kind": "panggilan masuk",
-     "dur": "03:12",
-     "time": "kemarin"
-    }
-   ],
-   "t": 41.92,
-   "beat": 12
+   "hand": 0.7,
+   "t": 11.32,
+   "beat": 3
   },
   {
    "type": "plate",
    "img": "gapClose",
    "from": [
-    560,
-    980,
-    1.6
+    500,
+    920,
+    1.2
    ],
    "to": [
-    600,
+    620,
     990,
     2.2
    ],
@@ -458,81 +345,100 @@
     "ring",
     "dust"
    ],
-   "ringBase": 0.4,
-   "t": 53.316,
-   "beat": 15
+   "ringBase": 0.45,
+   "t": 17.38,
+   "beat": 5
+  },
+  {
+   "type": "phone",
+   "ui": "call",
+   "name": "kamu",
+   "t": 23.6,
+   "beat": 7
+  },
+  {
+   "type": "plate",
+   "img": "phoneBed",
+   "from": [
+    470,
+    900,
+    1.05
+   ],
+   "to": [
+    500,
+    1000,
+    1.3
+   ],
+   "fx": [
+    "lamp",
+    "dust"
+   ],
+   "dark": 0.3,
+   "hand": 0.9,
+   "t": 35.36,
+   "beat": 12
   },
   {
    "type": "pause",
-   "t": 59.666,
-   "beat": 16
+   "t": 48.49,
+   "beat": 15
   },
   {
    "type": "choice",
-   "t": 68.046,
-   "beat": 19
+   "t": 56.87,
+   "beat": 18
   },
   {
    "type": "end",
-   "t": 75.746,
-   "beat": 21
+   "t": 63.77,
+   "beat": 20
   }
  ],
  "events": [
   {
-   "t": -4.6,
-   "kind": "pickup",
+   "t": 3.9,
+   "kind": "turn",
    "beat": 0
   },
   {
-   "t": 28.96,
-   "kind": "knock",
-   "beat": 8
+   "t": 6.87,
+   "kind": "open",
+   "beat": 1
   },
   {
-   "t": 36.55,
-   "kind": "softknock",
+   "t": 23.92,
+   "kind": "ring",
+   "beat": 7
+  },
+  {
+   "t": 31.11,
+   "kind": "sub",
    "beat": 10
   },
   {
-   "t": 39.65,
-   "kind": "hangup",
+   "t": 35.18,
+   "kind": "ringStop",
    "beat": 11
   },
   {
-   "t": 45.63,
-   "kind": "hl",
-   "beat": 13
-  },
-  {
-   "t": 45.63,
-   "kind": "sub",
-   "beat": 13
-  },
-  {
-   "t": 50.146,
-   "kind": "glitch",
-   "beat": 14
-  },
-  {
-   "t": 57.886,
-   "kind": "lightOff",
-   "beat": 15
-  },
-  {
-   "t": 57.886,
+   "t": 46.71,
    "kind": "silence",
-   "beat": 15
+   "beat": 14
   }
  ],
  "silence": [
-  57.936,
-  59.586
+  46.76,
+  48.41
  ],
- "rings": [],
+ "rings": [
+  [
+   23.92,
+   35.18
+  ]
+ ],
  "dials": [],
- "pauseStart": 59.666,
- "choiceStart": 68.046,
- "endStart": 75.746,
- "storyBeats": 16
+ "pauseStart": 48.49,
+ "choiceStart": 56.87,
+ "endStart": 63.77,
+ "storyBeats": 15
 }

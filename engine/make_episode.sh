@@ -21,7 +21,7 @@ for e in tl['events']:
 subprocess.run(['ffmpeg','-v','error','-y','-f','f32le','-ac',str(ch),'-ar',str(sr),'-i','-','-c:a','pcm_f32le','engine/audio/sfx.wav'],input=x.tobytes(),check=True)
 PY
 node "$P/mix.mjs" engine
-mkdir -p out/episodes
+mkdir -p out/episodes videos
 ffmpeg -v error -y -i out/engine/final.mp4 -c:v libx264 -preset veryfast -crf 24 -pix_fmt yuv420p -c:a copy -movflags +faststart "out/episodes/KamuPilih_${NAME}.mp4"
 cp out/engine/contact_9x16_p1.png "out/episodes/${NAME}_contact.png"
 ls -la "out/episodes/KamuPilih_${NAME}.mp4"

@@ -22,7 +22,7 @@ there is no screenshot, and GitHub hosting. Use SendUserMessage only for: the po
 - Look in this conversation for a comment screenshot the user sent after the latest post. If found, count
   A vs B (one vote per account, first answer counts), `vote.mode = "vote"` with percentages
   (if the margin < 10 %, add a beat "tipis banget bedanya." right after the hook).
-- If none: `vote.mode = "auto"` (the hook rotates honest lines: "kalian diem aja… jadi aku yang milih" / "tebakanku kalian bakal milih ini" / "komen kalian kebagi, jadi aku yang mutusin"). NEVER invent vote numbers or show a bar without a real count (user asked once; declined: it would mislead viewers); pick the branch that escalates the arc best (story bible table), and say
+- If none: `vote.mode = "auto"` (the hook rotates honest lines that make no claim about the unread comments: "kali ini aku yang milih" / "tebakanku kalian bakal milih ini" / "aku yang milih, protes di komen"). NEVER invent vote numbers or show a bar without a real count (user asked once; declined: it would mislead viewers); pick the branch that escalates the arc best (story bible table), and say
   which and why in the run summary.
 
 ## 2. Produce (18:05–18:40)
