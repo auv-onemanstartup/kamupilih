@@ -7,6 +7,8 @@ Story sounds (ringtone, dial tone, phone buzz) are synthesized here into the sco
 (knocks, clicks, pops, typing) come from film.js HITS via the motion-reel sfx.mjs.
 See docs/EPISODE_FORMAT.md for the episode file."""
 import json, shutil, subprocess, sys
+sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parent))
+from tts.say import say
 from pathlib import Path
 import numpy as np
 from scipy.signal import butter, sosfilt
@@ -77,6 +79,7 @@ def main(spec_path):
         {"text": f"follow biar kamu tau nasib kamu di part {nxt}.", "follow": True, "hold": 1.4},
     ]
     story_n = len(beats)
+    VOICES = {}
     beats += tail
     head = 3.6 if ep["vote"]["mode"] == "vote" else 3.4
     t = head
@@ -84,7 +87,13 @@ def main(spec_path):
     events, silence = [], None
     for i, b in enumerate(beats):
         b["i"] = i
+        voice = None
+        if b.get("text") and not b.get("novoice") and ep.get("voice", True):
+            style = "entity" if (b.get("red") and b["text"].lstrip().startswith("“")) else "narrator"
+            voice = say(b["text"], style); b["vo"] = round(len(voice) / SR, 3)
         dur = b.get("dur") or read_time(b["text"])
+        if voice is not None: dur = max(dur, len(voice) / SR + 0.35)
+        VOICES[i] = voice
         if b.get("shot"):
             shots.append({**b["shot"], "t": round(max(0.0, t - 0.12), 3), "beat": i})
         b["t0"] = round(t, 3); b["t1"] = round(t + dur, 3)
@@ -153,8 +162,16 @@ def main(spec_path):
     music[int(silence[0] * SR): int(silence[1] * SR)] = 0
     music[int((total - 1.0) * SR):] *= np.linspace(1, 0, n - int((total - 1.0) * SR))
     save(ROOT / "audio/music.wav", music[: int(total * SR)])
-    # no narrator in this format: an empty VO stem keeps mix.mjs happy
-    save(ROOT / "audio/vo.wav", np.zeros(int(total * SR)))
+    # narrator stem (offline voice), placed on each beat; dead silence stays dead
+    vo = np.zeros(n)
+    for b in beats:
+        v = VOICES.get(b["i"])
+        if v is None: continue
+        a = int((b["t0"] + 0.05) * SR); seg = vo[a: a + len(v)]; seg += v[: len(seg)]
+    for e in events:
+        if e["kind"] == "deadair": vo[int(e["t"] * SR): int((e["t"] + 1.0) * SR)] = 0
+    vo[int(silence[0] * SR): int(silence[1] * SR)] = 0
+    save(ROOT / "audio/vo.wav", vo[: int(total * SR)])
 
     tl = {"part": part, "branch": ep.get("branch", ""), "total": total, "vote": ep["vote"], "clock": ep.get("clock", "02.14"),
           "winnerLabel": ep["winnerLabel"], "choice": ch, "beats": beats, "shots": shots, "events": sorted(events, key=lambda e: e["t"]),

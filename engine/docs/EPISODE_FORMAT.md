@@ -1,8 +1,11 @@
 # Episode file format (engine/episodes/partNX.json)
 
 One file = one finished Reel. `bash engine/make_episode.sh engine/episodes/partNX.json`
-writes `out/episodes/KamuPilih_partNX.mp4` (+ contact sheet). No narrator: every beat is one
-line of on-screen text, timed by reading length (`len/12.5 + 0.85 s`, 1.5–5.2 s).
+writes `out/episodes/KamuPilih_partNX.mp4` (+ contact sheet). Every beat is one line of on-screen text,
+read aloud by the offline Indonesian narrator (`engine/tts/`, sherpa-onnx + piper id_ID news_tts, no credits).
+A beat lasts max(reading time `len/12.5 + 0.85 s`, voice length + 0.35 s). Red lines that start with “ are
+voiced as the entity (higher, muffled, echoing). `"novoice": true` on a beat keeps it silent; `"voice": false`
+at the top level makes a text-only episode.
 
 ```json
 {

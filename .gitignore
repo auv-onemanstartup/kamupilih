@@ -15,3 +15,6 @@ out2/
 adegan/
 kp1/assets/art/*
 !kp1/assets/art/.keep
+engine/tts/cache/
+engine/tts/sherpa-onnx-offline-tts
+engine/tts/voice/

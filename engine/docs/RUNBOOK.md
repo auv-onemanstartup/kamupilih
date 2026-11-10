@@ -1,7 +1,7 @@
 # KAMU PILIH daily runbook (fully automatic; the user only optionally sends comment screenshots)
 
 Fired every day at 18:00 WIB by a scheduled message in this session. Posting at 21:00 WIB. The user has
-given standing approval (2026-11-10) for automatic production and posting, no narrator, auto-pick when
+given standing approval (2026-11-10) for automatic production and posting, offline narrator (engine/tts), auto-pick when
 there is no screenshot, and GitHub hosting. Use SendUserMessage only for: the posted link, and blockers.
 
 ## 0. Workspace
@@ -9,6 +9,12 @@ there is no screenshot, and GitHub hosting. Use SendUserMessage only for: the po
   (`git clone https://github.com/<user>/kamupilih /home/claude/kamupilih`), else ask the user to upload
   `kamupilih_toolkit.zip` + `kamupilih_aset.zip`.
 - Read `engine/docs/STORY_BIBLE.md` (rules, arc, facts, episode log) and `EPISODE_FORMAT.md`.
+- Narrator engine (not in git, too big). If `engine/tts/sherpa-onnx-offline-tts` or `engine/tts/voice/` is
+  missing, re-download (approved by the user 2026-11-10) into a scratch folder and copy in:
+  `https://github.com/k2-fsa/sherpa-onnx/releases/download/v1.13.8/sherpa-onnx-v1.13.8-linux-x64-static.tar.bz2`
+  (take only `bin/sherpa-onnx-offline-tts`) and
+  `https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-id_ID-news_tts-medium.tar.bz2`
+  (unpack as `engine/tts/voice/`).
 
 ## 1. Decide the winner (18:00)
 - Latest part's permalink: episode log in the story bible. Stats: `vidiq_instagram_owner_insights`

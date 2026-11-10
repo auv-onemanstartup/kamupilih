@@ -20,7 +20,7 @@ for e in tl['events']:
     if e['kind'] == 'deadair': x[int(e['t']*sr):int((e['t']+1.0)*sr)] = 0
 subprocess.run(['ffmpeg','-v','error','-y','-f','f32le','-ac',str(ch),'-ar',str(sr),'-i','-','-c:a','pcm_f32le','engine/audio/sfx.wav'],input=x.tobytes(),check=True)
 PY
-node "$P/mix.mjs" engine --vo-db -60
+node "$P/mix.mjs" engine
 mkdir -p out/episodes
 ffmpeg -v error -y -i out/engine/final.mp4 -c:v libx264 -preset veryfast -crf 24 -pix_fmt yuv420p -c:a copy -movflags +faststart "out/episodes/KamuPilih_${NAME}.mp4"
 cp out/engine/contact_9x16_p1.png "out/episodes/${NAME}_contact.png"
