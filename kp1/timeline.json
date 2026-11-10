@@ -1,0 +1,302 @@
+{
+ "total": 84.38,
+ "shots": [
+  0.0,
+  4.58,
+  7.94,
+  15.74,
+  23.68,
+  30.33,
+  38.07,
+  45.81,
+  53.32,
+  60.67,
+  67.72,
+  72.28,
+  84.38
+ ],
+ "events": {
+  "knocks": [
+   21.7,
+   22.12,
+   22.54
+  ],
+  "ibu1": [
+   25.39,
+   4.95
+  ],
+  "soft_knocks": [
+   47.94,
+   48.49,
+   49.04
+  ],
+  "ibu2": [
+   49.69,
+   3.61
+  ],
+  "silence": [
+   58.87,
+   60.67
+  ]
+ },
+ "phrases": [
+  {
+   "i": 0,
+   "text": "cerita ini belum punya ending.",
+   "t0": 0.06,
+   "t1": 1.92
+  },
+  {
+   "i": 1,
+   "text": "kamu yang bakal nentuin.",
+   "t0": 2.24,
+   "t1": 3.74
+  },
+  {
+   "i": 2,
+   "text": "bayangin",
+   "t0": 4.76,
+   "t1": 5.34
+  },
+  {
+   "i": 3,
+   "text": "kamu baru pindah kos.",
+   "t0": 5.52,
+   "t1": 6.8
+  },
+  {
+   "i": 4,
+   "text": "malam pertama.",
+   "t0": 7.0,
+   "t1": 7.86
+  },
+  {
+   "i": 5,
+   "text": "kamarnya di ujung lorong.",
+   "t0": 8.12,
+   "t1": 9.44
+  },
+  {
+   "i": 6,
+   "text": "kamar nomor 13.",
+   "t0": 10.0,
+   "t1": 11.64
+  },
+  {
+   "i": 7,
+   "text": "kata ibu kos,",
+   "t0": 12.34,
+   "t1": 13.28
+  },
+  {
+   "i": 8,
+   "text": "penghuni sebelumnya pindah mendadak.",
+   "t0": 13.5,
+   "t1": 15.3
+  },
+  {
+   "i": 9,
+   "text": "jam 02.13.",
+   "t0": 15.92,
+   "t1": 17.5
+  },
+  {
+   "i": 10,
+   "text": "kamu kebangun.",
+   "t0": 17.74,
+   "t1": 18.54
+  },
+  {
+   "i": 11,
+   "text": "ada yang ngetuk pintu.",
+   "t0": 18.98,
+   "t1": 20.06
+  },
+  {
+   "i": 12,
+   "text": "tiga kali.",
+   "t0": 20.66,
+   "t1": 21.4
+  },
+  {
+   "i": 13,
+   "text": "terus ada suara.",
+   "t0": 23.86,
+   "t1": 25.14
+  },
+  {
+   "i": 14,
+   "text": "itu suara ibu kamu.",
+   "t0": 30.51,
+   "t1": 31.79
+  },
+  {
+   "i": 15,
+   "text": "persis.",
+   "t0": 32.17,
+   "t1": 32.79
+  },
+  {
+   "i": 16,
+   "text": "masalahnya...",
+   "t0": 33.33,
+   "t1": 34.21
+  },
+  {
+   "i": 17,
+   "text": "ibu kamu di kampung.",
+   "t0": 34.63,
+   "t1": 35.89
+  },
+  {
+   "i": 18,
+   "text": "300 kilo dari sini.",
+   "t0": 36.09,
+   "t1": 37.55
+  },
+  {
+   "i": 19,
+   "text": "kamu cek hp.",
+   "t0": 38.25,
+   "t1": 39.13
+  },
+  {
+   "i": 20,
+   "text": "chat terakhir dari ibu, jam 22.00:",
+   "t0": 39.67,
+   "t1": 42.03
+  },
+  {
+   "i": 21,
+   "text": "“ibu tidur duluan ya nak.",
+   "t0": 42.75,
+   "t1": 44.15
+  },
+  {
+   "i": 22,
+   "text": "jangan begadang.”",
+   "t0": 44.35,
+   "t1": 45.13
+  },
+  {
+   "i": 23,
+   "text": "ketukan lagi.",
+   "t0": 45.99,
+   "t1": 46.65
+  },
+  {
+   "i": 24,
+   "text": "lebih pelan.",
+   "t0": 47.03,
+   "t1": 47.69
+  },
+  {
+   "i": 25,
+   "text": "kamu lihat ke celah bawah pintu.",
+   "t0": 53.5,
+   "t1": 55.1
+  },
+  {
+   "i": 26,
+   "text": "ada bayangan kaki.",
+   "t0": 55.4,
+   "t1": 56.52
+  },
+  {
+   "i": 27,
+   "text": "tapi...",
+   "t0": 56.96,
+   "t1": 57.4
+  },
+  {
+   "i": 28,
+   "text": "kakinya nggak napak.",
+   "t0": 57.86,
+   "t1": 58.82
+  },
+  {
+   "i": 29,
+   "text": "stop.",
+   "t0": 61.4,
+   "t1": 61.68
+  },
+  {
+   "i": 30,
+   "text": "dari sini, aku nggak tau kelanjutannya.",
+   "t0": 62.32,
+   "t1": 64.3
+  },
+  {
+   "i": 31,
+   "text": "karena yang nulis kelanjutannya...",
+   "t0": 64.88,
+   "t1": 66.42
+  },
+  {
+   "i": 32,
+   "text": "itu kamu.",
+   "t0": 66.7,
+   "t1": 67.26
+  },
+  {
+   "i": 33,
+   "text": "A:",
+   "t0": 68.02,
+   "t1": 68.3
+  },
+  {
+   "i": 34,
+   "text": "buka pintunya.",
+   "t0": 68.6,
+   "t1": 69.3
+  },
+  {
+   "i": 35,
+   "text": "B:",
+   "t0": 69.88,
+   "t1": 70.2
+  },
+  {
+   "i": 36,
+   "text": "telepon ibu kamu sekarang.",
+   "t0": 70.44,
+   "t1": 71.8
+  },
+  {
+   "i": 37,
+   "text": "tulis A atau B di komentar.",
+   "t0": 72.46,
+   "t1": 74.08
+  },
+  {
+   "i": 38,
+   "text": "pilihan terbanyak,",
+   "t0": 74.62,
+   "t1": 75.42
+  },
+  {
+   "i": 39,
+   "text": "itu yang bakal terjadi.",
+   "t0": 75.62,
+   "t1": 76.88
+  },
+  {
+   "i": 40,
+   "text": "apa pun akibatnya.",
+   "t0": 77.26,
+   "t1": 78.6
+  },
+  {
+   "i": 41,
+   "text": "follow,",
+   "t0": 79.3,
+   "t1": 79.72
+  },
+  {
+   "i": 42,
+   "text": "biar kamu tau nasib kamu sendiri di part 2.",
+   "t0": 79.9,
+   "t1": 82.38
+  }
+ ]
+}

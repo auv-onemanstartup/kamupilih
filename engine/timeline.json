@@ -1,0 +1,477 @@
+{
+ "part": 3,
+ "branch": "B",
+ "total": 80.14,
+ "vote": {
+  "mode": "vote",
+  "a": 30,
+  "b": 70,
+  "labelA": "BILANG KE IBU",
+  "labelB": "PURA-PURA TIDUR"
+ },
+ "clock": "02.16",
+ "winnerLabel": "PURA-PURA TIDUR",
+ "choice": {
+  "a": "lompat, tahan pintunya",
+  "b": "tetap merem, tahan napas",
+  "labelA": "TAHAN\nPINTUNYA",
+  "labelB": "TAHAN\nNAPAS",
+  "cardA": [
+   "knob",
+   [
+    190,
+    280,
+    560,
+    1109
+   ]
+  ],
+  "cardB": [
+   "phone",
+   [
+    170,
+    640,
+    560,
+    1109
+   ]
+  ]
+ },
+ "beats": [
+  {
+   "text": "kalian yang milih ini.",
+   "shot": {
+    "type": "phone",
+    "ui": "call"
+   },
+   "events": [
+    "pickup@-8"
+   ],
+   "i": 0,
+   "t0": 3.6,
+   "t1": 6.21
+  },
+  {
+   "text": "jadi kalau ada apa-apa... jangan salahin aku.",
+   "i": 1,
+   "t0": 6.51,
+   "t1": 10.96
+  },
+  {
+   "text": "kamu tutup teleponnya.",
+   "events": [
+    "hangup@0.7"
+   ],
+   "i": 2,
+   "t0": 11.26,
+   "t1": 13.87
+  },
+  {
+   "text": "tanpa ngomong apa-apa.",
+   "i": 3,
+   "t0": 14.17,
+   "t1": 16.78
+  },
+  {
+   "text": "kamu tarik selimut. merem.",
+   "shot": {
+    "type": "phone",
+    "ui": "lock",
+    "zoom": [
+     1.7,
+     1.15
+    ],
+    "dimFrom": 0.6
+   },
+   "i": 4,
+   "t0": 17.08,
+   "t1": 20.01
+  },
+  {
+   "text": "hening.",
+   "shot": {
+    "type": "plate",
+    "img": "gapWide",
+    "from": [
+     470,
+     900,
+     1.0
+    ],
+    "to": [
+     560,
+     1000,
+     1.25
+    ],
+    "fx": [
+     "ring",
+     "dust",
+     "fog"
+    ],
+    "ringBase": 0.3
+   },
+   "events": [
+    "lightOff@0.9"
+   ],
+   "dur": 2.6,
+   "i": 5,
+   "t0": 20.31,
+   "t1": 22.91
+  },
+  {
+   "text": "lima menit.",
+   "shot": {
+    "type": "plate",
+    "img": "gapClose",
+    "from": [
+     470,
+     900,
+     1.2
+    ],
+    "to": [
+     520,
+     960,
+     1.4
+    ],
+    "fx": [
+     "dust"
+    ],
+    "dark": 0.35
+   },
+   "time": "02.21",
+   "i": 6,
+   "t0": 23.21,
+   "t1": 24.94
+  },
+  {
+   "text": "sepuluh menit.",
+   "time": "02.26",
+   "hold": 0.4,
+   "i": 7,
+   "t0": 25.24,
+   "t1": 27.21
+  },
+  {
+   "text": "terus hp kamu nyala sendiri.",
+   "shot": {
+    "type": "phone",
+    "ui": "lock",
+    "zoom": [
+     1.6,
+     1.95
+    ]
+   },
+   "events": [
+    "buzz@0.2"
+   ],
+   "i": 8,
+   "t0": 27.91,
+   "t1": 31.0
+  },
+  {
+   "text": "pesan dari ibu.",
+   "notif": {
+    "title": "ibu",
+    "body": "nak, kok ditutup?"
+   },
+   "events": [
+    "notif"
+   ],
+   "i": 9,
+   "t0": 31.3,
+   "t1": 33.35
+  },
+  {
+   "text": "nak, kok ditutup?",
+   "shot": {
+    "type": "phone",
+    "ui": "chat"
+   },
+   "msg": {
+    "side": "in",
+    "text": "nak, kok ditutup?",
+    "time": "02.26"
+   },
+   "nosuper": true,
+   "dur": 2.0,
+   "i": 10,
+   "t0": 33.65,
+   "t1": 35.65
+  },
+  {
+   "text": "ibu udah di depan.",
+   "typing": true,
+   "msg": {
+    "side": "in",
+    "text": "ibu udah di depan.",
+    "time": "02.26"
+   },
+   "nosuper": true,
+   "dur": 2.2,
+   "i": 11,
+   "t0": 35.95,
+   "t1": 38.15
+  },
+  {
+   "text": "ibu masuk ya.",
+   "msg": {
+    "side": "in",
+    "text": "ibu masuk ya.",
+    "time": "02.27"
+   },
+   "nosuper": true,
+   "dur": 2.4,
+   "hold": 0.3,
+   "i": 12,
+   "t0": 38.45,
+   "t1": 40.85
+  },
+  {
+   "text": "ckrek.",
+   "shot": {
+    "type": "knob"
+   },
+   "events": [
+    "turn@0.1",
+    "sub@0.1"
+   ],
+   "red": true,
+   "i": 13,
+   "t0": 41.45,
+   "t1": 42.95
+  },
+  {
+   "text": "gagang pintunya... pelan-pelan muter.",
+   "i": 14,
+   "t0": 43.25,
+   "t1": 47.06
+  },
+  {
+   "text": "dan kamu baru sadar.",
+   "i": 15,
+   "t0": 47.36,
+   "t1": 49.81
+  },
+  {
+   "text": "tadi... kamu kunci pintunya nggak?",
+   "red": true,
+   "events": [
+    "silence@end"
+   ],
+   "i": 16,
+   "t0": 50.11,
+   "t1": 53.68
+  },
+  {
+   "text": "stop.",
+   "shot": {
+    "type": "pause"
+   },
+   "hold": 0.2,
+   "i": 17,
+   "t0": 55.58,
+   "t1": 57.08
+  },
+  {
+   "text": "kelanjutannya...",
+   "hold": 0.1,
+   "i": 18,
+   "t0": 57.58,
+   "t1": 59.71
+  },
+  {
+   "text": "kalian lagi yang nentuin.",
+   "hold": 0.3,
+   "i": 19,
+   "t0": 60.11,
+   "t1": 62.96
+  },
+  {
+   "text": "A: lompat, tahan pintunya",
+   "shot": {
+    "type": "choice"
+   },
+   "nosuper": true,
+   "card": "A",
+   "i": 20,
+   "t0": 63.56,
+   "t1": 66.41
+  },
+  {
+   "text": "B: tetap merem, tahan napas",
+   "nosuper": true,
+   "card": "B",
+   "hold": 0.6,
+   "i": 21,
+   "t0": 66.71,
+   "t1": 69.72
+  },
+  {
+   "text": "tulis A atau B di komentar.",
+   "shot": {
+    "type": "end"
+   },
+   "i": 22,
+   "t0": 70.62,
+   "t1": 73.63
+  },
+  {
+   "text": "follow biar kamu tau nasib kamu di part 4.",
+   "follow": true,
+   "hold": 1.4,
+   "i": 23,
+   "t0": 73.93,
+   "t1": 78.14
+  }
+ ],
+ "shots": [
+  {
+   "t": 0.0,
+   "type": "vote"
+  },
+  {
+   "type": "phone",
+   "ui": "call",
+   "t": 3.48,
+   "beat": 0
+  },
+  {
+   "type": "phone",
+   "ui": "lock",
+   "zoom": [
+    1.7,
+    1.15
+   ],
+   "dimFrom": 0.6,
+   "t": 16.96,
+   "beat": 4
+  },
+  {
+   "type": "plate",
+   "img": "gapWide",
+   "from": [
+    470,
+    900,
+    1.0
+   ],
+   "to": [
+    560,
+    1000,
+    1.25
+   ],
+   "fx": [
+    "ring",
+    "dust",
+    "fog"
+   ],
+   "ringBase": 0.3,
+   "t": 20.19,
+   "beat": 5
+  },
+  {
+   "type": "plate",
+   "img": "gapClose",
+   "from": [
+    470,
+    900,
+    1.2
+   ],
+   "to": [
+    520,
+    960,
+    1.4
+   ],
+   "fx": [
+    "dust"
+   ],
+   "dark": 0.35,
+   "t": 23.09,
+   "beat": 6
+  },
+  {
+   "type": "phone",
+   "ui": "lock",
+   "zoom": [
+    1.6,
+    1.95
+   ],
+   "t": 27.79,
+   "beat": 8
+  },
+  {
+   "type": "phone",
+   "ui": "chat",
+   "t": 33.53,
+   "beat": 10
+  },
+  {
+   "type": "knob",
+   "t": 41.33,
+   "beat": 13
+  },
+  {
+   "type": "pause",
+   "t": 55.46,
+   "beat": 17
+  },
+  {
+   "type": "choice",
+   "t": 63.44,
+   "beat": 20
+  },
+  {
+   "type": "end",
+   "t": 70.5,
+   "beat": 22
+  }
+ ],
+ "events": [
+  {
+   "t": -4.4,
+   "kind": "pickup",
+   "beat": 0
+  },
+  {
+   "t": 11.96,
+   "kind": "hangup",
+   "beat": 2
+  },
+  {
+   "t": 21.21,
+   "kind": "lightOff",
+   "beat": 5
+  },
+  {
+   "t": 28.11,
+   "kind": "buzz",
+   "beat": 8
+  },
+  {
+   "t": 31.3,
+   "kind": "notif",
+   "beat": 9
+  },
+  {
+   "t": 41.55,
+   "kind": "turn",
+   "beat": 13
+  },
+  {
+   "t": 41.55,
+   "kind": "sub",
+   "beat": 13
+  },
+  {
+   "t": 53.68,
+   "kind": "silence",
+   "beat": 16
+  }
+ ],
+ "silence": [
+  53.73,
+  55.38
+ ],
+ "rings": [],
+ "dials": [],
+ "pauseStart": 55.46,
+ "choiceStart": 63.44,
+ "endStart": 70.5,
+ "storyBeats": 17
+}

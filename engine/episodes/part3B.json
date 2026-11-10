@@ -1,0 +1,26 @@
+{
+  "part": 3, "branch": "B", "winnerLabel": "PURA-PURA TIDUR", "clock": "02.16",
+  "vote": {"mode": "vote", "a": 30, "b": 70, "labelA": "BILANG KE IBU", "labelB": "PURA-PURA TIDUR"},
+  "beats": [
+    {"text": "kalian yang milih ini.", "shot": {"type": "phone", "ui": "call"}, "events": ["pickup@-8"]},
+    {"text": "jadi kalau ada apa-apa... jangan salahin aku."},
+    {"text": "kamu tutup teleponnya.", "events": ["hangup@0.7"]},
+    {"text": "tanpa ngomong apa-apa."},
+    {"text": "kamu tarik selimut. merem.", "shot": {"type": "phone", "ui": "lock", "zoom": [1.7, 1.15], "dimFrom": 0.6}},
+    {"text": "hening.", "shot": {"type": "plate", "img": "gapWide", "from": [470, 900, 1.0], "to": [560, 1000, 1.25], "fx": ["ring", "dust", "fog"], "ringBase": 0.3}, "events": ["lightOff@0.9"], "dur": 2.6},
+    {"text": "lima menit.", "shot": {"type": "plate", "img": "gapClose", "from": [470, 900, 1.2], "to": [520, 960, 1.4], "fx": ["dust"], "dark": 0.35}, "time": "02.21"},
+    {"text": "sepuluh menit.", "time": "02.26", "hold": 0.4},
+    {"text": "terus hp kamu nyala sendiri.", "shot": {"type": "phone", "ui": "lock", "zoom": [1.6, 1.95]}, "events": ["buzz@0.2"]},
+    {"text": "pesan dari ibu.", "notif": {"title": "ibu", "body": "nak, kok ditutup?"}, "events": ["notif"]},
+    {"text": "nak, kok ditutup?", "shot": {"type": "phone", "ui": "chat"}, "msg": {"side": "in", "text": "nak, kok ditutup?", "time": "02.26"}, "nosuper": true, "dur": 2.0},
+    {"text": "ibu udah di depan.", "typing": true, "msg": {"side": "in", "text": "ibu udah di depan.", "time": "02.26"}, "nosuper": true, "dur": 2.2},
+    {"text": "ibu masuk ya.", "msg": {"side": "in", "text": "ibu masuk ya.", "time": "02.27"}, "nosuper": true, "dur": 2.4, "hold": 0.3},
+    {"text": "ckrek.", "shot": {"type": "knob"}, "events": ["turn@0.1", "sub@0.1"], "red": true},
+    {"text": "gagang pintunya... pelan-pelan muter."},
+    {"text": "dan kamu baru sadar."},
+    {"text": "tadi... kamu kunci pintunya nggak?", "red": true, "events": ["silence@end"]}
+  ],
+  "choice": {"a": "lompat, tahan pintunya", "b": "tetap merem, tahan napas",
+             "labelA": "TAHAN\nPINTUNYA", "labelB": "TAHAN\nNAPAS",
+             "cardA": ["knob", [190, 280, 560, 1109]], "cardB": ["phone", [170, 640, 560, 1109]]}
+}

@@ -1,0 +1,17 @@
+out/
+**/audio/*.wav
+**/audio/vo/
+lab/
+kp1/out/
+*.log
+canva/
+adegan2/
+input/
+render.py
+render2.py
+out2/
+*.zip
+*.wav
+adegan/
+kp1/assets/art/*
+!kp1/assets/art/.keep

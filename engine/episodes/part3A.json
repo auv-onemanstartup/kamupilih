@@ -1,0 +1,216 @@
+{
+ "part": 3,
+ "branch": "A",
+ "winnerLabel": "BILANG KE IBU",
+ "clock": "02.16",
+ "vote": {
+  "mode": "vote",
+  "a": 70,
+  "b": 30,
+  "labelA": "BILANG KE IBU",
+  "labelB": "PURA-PURA TIDUR"
+ },
+ "beats": [
+  {
+   "text": "kalian yang milih ini.",
+   "shot": {
+    "type": "phone",
+    "ui": "call"
+   },
+   "events": [
+    "pickup@-8"
+   ]
+  },
+  {
+   "text": "jadi kalau ada apa-apa... jangan salahin aku."
+  },
+  {
+   "text": "kamu bisik pelan:"
+  },
+  {
+   "text": "“bu... ada yang di depan pintu.”",
+   "shot": {
+    "type": "plate",
+    "img": "gapWide",
+    "from": [
+     470,
+     880,
+     1.0
+    ],
+    "to": [
+     540,
+     980,
+     1.2
+    ],
+    "fx": [
+     "dust",
+     "fog"
+    ],
+    "dark": 0.2
+   }
+  },
+  {
+   "text": "telepon hening. lama.",
+   "dur": 2.8,
+   "shot": {
+    "type": "phone",
+    "ui": "call",
+    "zoom": [
+     2.15,
+     1.9
+    ]
+   }
+  },
+  {
+   "text": "“nak... ibu tahu.”",
+   "red": true
+  },
+  {
+   "text": "“ibu juga lagi berdiri di depan pintu.”",
+   "red": true,
+   "shot": {
+    "type": "plate",
+    "img": "gapClose",
+    "from": [
+     470,
+     900,
+     1.05
+    ],
+    "to": [
+     600,
+     990,
+     1.6
+    ],
+    "fx": [
+     "ring",
+     "dust",
+     "fog"
+    ],
+    "ringBase": 0.35
+   }
+  },
+  {
+   "text": "terus...",
+   "hold": 0.3
+  },
+  {
+   "text": "tok. tok. tok.",
+   "events": [
+    "knock@0.1"
+   ],
+   "dur": 2.2
+  },
+  {
+   "text": "dan dari telepon, kamu dengar ketukan yang sama.",
+   "shot": {
+    "type": "phone",
+    "ui": "call"
+   }
+  },
+  {
+   "text": "persis bersamaan.",
+   "events": [
+    "softknock@0.2"
+   ],
+   "dur": 2.4
+  },
+  {
+   "text": "kamu matiin teleponnya.",
+   "events": [
+    "hangup@0.6"
+   ]
+  },
+  {
+   "text": "kamu buka riwayat panggilan.",
+   "shot": {
+    "type": "phone",
+    "ui": "history",
+    "rows": [
+     {
+      "name": "ibu",
+      "kind": "panggilan keluar",
+      "dur": "00:00",
+      "time": "02.15",
+      "hl": true
+     },
+     {
+      "name": "ibu",
+      "kind": "pesan",
+      "dur": "",
+      "time": "22.00"
+     },
+     {
+      "name": "ibu",
+      "kind": "panggilan masuk",
+      "dur": "03:12",
+      "time": "kemarin"
+     }
+    ]
+   }
+  },
+  {
+   "text": "“ibu · panggilan keluar · 00:00.”",
+   "events": [
+    "hl@0.2",
+    "sub@0.2"
+   ]
+  },
+  {
+   "text": "teleponnya... nggak pernah tersambung.",
+   "events": [
+    "glitch@0.9"
+   ]
+  },
+  {
+   "text": "terus siapa yang dari tadi ngobrol sama kamu?",
+   "red": true,
+   "shot": {
+    "type": "plate",
+    "img": "gapClose",
+    "from": [
+     560,
+     980,
+     1.6
+    ],
+    "to": [
+     600,
+     990,
+     2.2
+    ],
+    "fx": [
+     "ring",
+     "dust"
+    ],
+    "ringBase": 0.4
+   },
+   "events": [
+    "lightOff@end",
+    "silence@end"
+   ]
+  }
+ ],
+ "choice": {
+  "a": "telepon ibu lagi, sekarang",
+  "b": "buka pintunya, lihat sendiri",
+  "labelA": "TELEPON\nIBU LAGI",
+  "labelB": "BUKA\nPINTUNYA",
+  "cardA": [
+   "phone",
+   [
+    170,
+    640,
+    560,
+    1109
+   ]
+  ],
+  "cardB": [
+   "doorOpen",
+   [
+    240,
+    170,
+    560,
+    1109
+   ]
+  ]
+ }
+}
