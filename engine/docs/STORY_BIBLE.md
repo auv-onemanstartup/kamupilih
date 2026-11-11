@@ -50,10 +50,15 @@ Season 2 can start in a new place (rumah ibu? asrama?) with the same entity rule
   berdiri di depan pintu." Three knocks on your door, heard on the call at the same moment. You hung up; the call log shows
   "ibu · panggilan keluar · 00:00" at 02.15: the call never connected. The phone outside your door was glowing; its light died.
   Choice for Part 4: A = telepon ibu lagi, sekarang / B = buka pintunya, lihat sendiri.
+- Part 4 (B, auto-picked): you opened the door; the red-lamp hallway was empty, the lamp swayed by itself. Ibu's phone lay
+  on the floor outside, screen lit. You picked it up: an incoming call from "kamu" (your own number). From inside your room,
+  behind you, something whispered in YOUR voice: "jangan diangkat." (02.31)
+  Choice for Part 5: A = angkat teleponnya / B = balik badan, lihat ke kamar.
 
 ## Episode log
 | part | branch | posted | permalink | votes |
 |---|---|---|---|---|
 | 1 | – | 2026-11-03 21:00 | https://www.instagram.com/reel/DfSDGuEP2tc/ | – |
 | 2 | B telepon ibu | 2026-11-09 08:50 | https://www.instagram.com/reel/DfgHPeEhOE_/ | A 1 · B 7 |
-| 3 | A bilang ke ibu | 2026-11-10 21:00 | https://www.instagram.com/reel/DfkEntKoLDr/ | auto (no screenshot) |
+| 3 | A bilang ke ibu | 2026-11-10 21:00 | https://www.instagram.com/reel/DfkEntKoLDr/ | auto (no screenshot) · 166 plays/21h, 7 % watched, 68 % skip |
+| 4 | B buka pintunya | 2026-11-11 21:00 | https://www.instagram.com/reel/DfmpbGITIdd/ | auto · new hook opening |
