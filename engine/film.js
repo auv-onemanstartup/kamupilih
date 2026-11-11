@@ -216,7 +216,7 @@ function sKnob(ctx, u, IMG, i) {
 // ---------------------------------------------------------------- vote / pause / choice / end
 const coverKey = SH.find((s) => s.type === 'plate')?.img || 'gapWide';
 function sVote(ctx, u, IMG) {
-  HX.plate(ctx, IMG[coverKey], 470, 900, logZoom(1.12, 1.0, E.outCubic(prog(u, 0, 4))), null, { u }); HX.darken(ctx, 0.6);
+  HX.plate(ctx, IMG[coverKey], 470, 900, logZoom(1.12, 1.0, E.outCubic(prog(u, 0, 4))), null, { u }); HX.darken(ctx, TL.vote.mode === 'vote' ? 0.6 : 0.4);
   HX.fogDeep(ctx, u, { a: 0.5 }); HX.embers(ctx, u, 20, 3);
   const V = TL.vote;
   if (V.mode === 'vote') {
@@ -224,13 +224,17 @@ function sVote(ctx, u, IMG) {
     HX.title(ctx, u, 'KALIAN PILIH', -0.45, 590, 110, C.bone);
     HX.voteBar(ctx, u, 0.4, { a: V.a, b: V.b, y: 800, labelA: V.labelA, labelB: V.labelB });
   } else {
-    // honest auto-pick hooks (no screenshot = no real count, so never show numbers), rotated per part
-    const HOOKS = [['KALI INI', 'AKU YANG MILIH.'], ['TEBAKANKU', 'KALIAN BAKAL MILIH INI.'], ['AKU YANG MILIH.', 'PROTES DI KOMEN.']];   // no claims about the comments we could not read
-    const [h1, h2] = HOOKS[(TL.part + 1) % HOOKS.length];
-    HX.title(ctx, u, h1, -0.6, 560, 92, C.bone);
-    HX.title(ctx, u, h2, 0.7, 700, 92, C.bone);
+    // auto pick: open on the episode's scariest line (visible on frame 0 = the Reel's cover), then say honestly who picked
+    // (Part 3's "TEBAKANKU" text-card opening lost 68 % of viewers in the first seconds)
+    if (TL.hook) {                     // two big lines, fully on screen from frame 0
+      const w = TL.hook.toUpperCase().split(' '), mid = Math.ceil(w.length / 2);
+      HX.title(ctx, u, w.slice(0, mid).join(' '), -1.5, 800, 128, C.red);
+      HX.title(ctx, u, w.slice(mid).join(' '), -1.4, 950, 128, C.red);
+    }
+    const sk = springU(u, 1.15, SPRING.snappy);
+    if (sk > 0) { ctx.save(); ctx.globalAlpha = clamp(sk * 1.4); M.text(ctx, 'malam ini aku yang milih:', W / 2, 1240, font(46, 700, 'UI'), C.bone, 'center'); ctx.restore(); }
   }
-  const k = springU(u, 1.6, SPRING.snappy);
+  const k = springU(u, TL.vote.mode === 'vote' ? 1.6 : 1.3, SPRING.snappy);
   if (k > 0) {
     ctx.save(); ctx.globalAlpha = clamp(k * 1.4); ctx.translate(W / 2, 1380); ctx.rotate(-0.06); ctx.scale(1.6 - 0.6 * k, 1.6 - 0.6 * k);
     ctx.strokeStyle = C.red; ctx.lineWidth = 8; ctx.strokeRect(-430, -95, 860, 150);

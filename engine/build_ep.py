@@ -85,7 +85,8 @@ def main(spec_path):
     story_n = len(beats)
     VOICES = {}
     beats += tail
-    head = 3.6 if ep["vote"]["mode"] == "vote" else 3.4
+    hook_voice = say(ep["hook"]) if ep.get("hook") and ep.get("voice", True) else None
+    head = 3.6 if ep["vote"]["mode"] == "vote" else max(2.6, (len(hook_voice) / SR + 0.5) if hook_voice is not None else 0)
     t = head
     shots = [{"t": 0.0, "type": "vote"}]
     events, silence = [], None
@@ -168,6 +169,8 @@ def main(spec_path):
     save(ROOT / "audio/music.wav", music[: int(total * SR)])
     # narrator stem (offline voice), placed on each beat; dead silence stays dead
     vo = np.zeros(n)
+    if hook_voice is not None and ep["vote"]["mode"] != "vote":
+        a = int(0.08 * SR); seg = vo[a: a + len(hook_voice)]; seg += hook_voice[: len(seg)]
     for b in beats:
         v = VOICES.get(b["i"])
         if v is None: continue
@@ -178,7 +181,7 @@ def main(spec_path):
     save(ROOT / "audio/vo.wav", vo[: int(total * SR)])
 
     tl = {"part": part, "branch": ep.get("branch", ""), "total": total, "vote": ep["vote"], "clock": ep.get("clock", "02.14"),
-          "winnerLabel": ep["winnerLabel"], "choice": ch, "beats": beats, "shots": shots, "events": sorted(events, key=lambda e: e["t"]),
+          "winnerLabel": ep["winnerLabel"], "hook": ep.get("hook", ""), "choice": ch, "beats": beats, "shots": shots, "events": sorted(events, key=lambda e: e["t"]),
           "silence": silence, "rings": rings, "dials": dials, "pauseStart": pause_t, "choiceStart": choice_t, "endStart": end_t,
           "storyBeats": story_n}
     (ROOT / "timeline.json").write_text(json.dumps(tl, indent=1, ensure_ascii=False))

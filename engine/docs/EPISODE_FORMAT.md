@@ -17,6 +17,8 @@ at the top level makes a text-only episode.
 }
 ```
 
+- `hook` (required): the episode's scariest line, ≤ 32 chars, e.g. "nomor kamu sendiri nelpon kamu." In auto mode the Reel opens on it
+  (big red, two lines, voiced, visible on frame 0 = the cover). Part 3's plain text-card opening lost 68 % of viewers.
 - `vote.mode`: `"vote"` (bar with a/b %) or `"auto"` (no screenshot: "KALIAN DIEM AJA... JADI AKU YANG MILIH.").
 - The engine appends the standard tail itself: stop / kelanjutannya / kalian lagi yang nentuin → A/B cards → "tulis A atau B di komentar" → follow part N+1.
 - Exactly one story beat should carry `"silence@end"` (the scare: frame freezes, dead silence 1.65 s). If none, the last story beat gets it.

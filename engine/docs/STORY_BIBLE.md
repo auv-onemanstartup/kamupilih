@@ -29,6 +29,7 @@ comments; the majority decides the next part.
 Season 2 can start in a new place (rumah ibu? asrama?) with the same entity rules.
 
 ## Writing rules for every episode
+- Write a `hook`: the scariest reveal of the episode as a teaser line (the first thing viewers see and hear).
 - 14–18 story beats, 60–90 s total. Open on the vote result (engine does it), then straight into consequence.
 - One clear twist per part, and it must follow from the winning choice.
 - Each beat line ≤ 45 chars, lowercase, natural spoken Indonesian ("kamu", "nggak", "udah").
