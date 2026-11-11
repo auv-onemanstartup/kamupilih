@@ -1,0 +1,25 @@
+{
+  "part": 5, "branch": "B", "winnerLabel": "BALIK BADAN", "clock": "02.33",
+  "hook": "ibu kos: ada yang ngaku jadi kamu.",
+  "vote": {"mode": "auto", "labelA": "ANGKAT TELEPONNYA", "labelB": "BALIK BADAN"},
+  "beats": [
+    {"text": "kalian lagi yang milih ini.", "shot": {"type": "plate", "img": "phoneBed", "from": [480, 760, 1.25], "to": [470, 980, 1.05], "fx": ["lamp", "dust"], "hand": 1.0}},
+    {"text": "kamu balik badan."},
+    {"text": "kamar kamu kosong.", "dur": 2.2},
+    {"text": "cuma ada hp kamu sendiri di kasur."},
+    {"text": "layarnya nyala.", "events": ["buzz@0.2"]},
+    {"text": "pesan masuk.", "shot": {"type": "phone", "ui": "lock"}, "notif": {"title": "ibu kos", "body": "13, kamu masih bangun?"}, "events": ["notif"], "time": "02.34"},
+    {"text": "dari ibu kos.", "dur": 2.0},
+    {"text": "13, kamu masih bangun?", "shot": {"type": "phone", "ui": "chat", "name": "ibu kos"}, "msg": {"side": "in", "text": "13, kamu masih bangun?", "time": "02.34"}, "nosuper": true, "dur": 2.2},
+    {"text": "ada yang ngetuk kamar saya.", "typing": true, "msg": {"side": "in", "text": "ada yang ngetuk kamar saya.", "time": "02.34"}, "nosuper": true, "dur": 2.4},
+    {"text": "katanya dia kamu.", "msg": {"side": "in", "text": "katanya dia kamu.", "time": "02.35"}, "nosuper": true, "dur": 2.4},
+    {"text": "suaranya persis suara kamu.", "msg": {"side": "in", "text": "suaranya persis suara kamu.", "time": "02.35"}, "nosuper": true, "dur": 2.6, "hold": 0.3},
+    {"text": "kamu di kamar.", "shot": {"type": "plate", "img": "doorOpen", "from": [470, 900, 1.0], "to": [505, 780, 1.45], "fx": ["lamp", "dust", "fog"], "hand": 0.8}},
+    {"text": "kamar ibu kos di ujung lorong itu."},
+    {"text": "dan lampunya baru aja nyala.", "events": ["flash@0.3"]},
+    {"text": "ibu kos lagi bukain pintunya.", "red": true, "events": ["silence@end"]}
+  ],
+  "choice": {"a": "bales: \"itu bukan aku, jangan dibuka!\"", "b": "lari ke kamar ibu kos sekarang",
+             "labelA": "BALES\nCHATNYA", "labelB": "LARI KE\nIBU KOS",
+             "cardA": ["phone", [170, 640, 560, 1109]], "cardB": ["doorOpen", [240, 170, 560, 1109]]}
+}

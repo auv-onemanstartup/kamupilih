@@ -1,0 +1,24 @@
+{
+  "part": 5, "branch": "A", "winnerLabel": "ANGKAT TELEPONNYA", "clock": "02.33",
+  "hook": "suara kamu bilang: aku udah di dalam.",
+  "vote": {"mode": "auto", "labelA": "ANGKAT TELEPONNYA", "labelB": "BALIK BADAN"},
+  "beats": [
+    {"text": "kalian lagi yang milih ini.", "shot": {"type": "phone", "ui": "call", "name": "kamu"}, "events": ["ring@-3", "pickup@0.6"]},
+    {"text": "kamu angkat teleponnya."},
+    {"text": "hening. cuma ada napas.", "dur": 2.6},
+    {"text": "terus suara kamu sendiri bilang:"},
+    {"text": "“jangan masuk lagi ke kamar.”", "red": true},
+    {"text": "“aku udah di dalam.”", "red": true, "events": ["sub@0.2"]},
+    {"text": "kamu nengok ke belakang.", "shot": {"type": "plate", "img": "doorOpen", "from": [505, 760, 1.5], "to": [470, 900, 1.0], "fx": ["lamp", "dust", "flicker"], "hand": 1.2}},
+    {"text": "pintu kamar kamu... udah ketutup."},
+    {"text": "padahal kamu nggak nutup.", "dur": 2.4},
+    {"text": "ckrek.", "shot": {"type": "knob"}, "events": ["turn@0.1"], "red": true},
+    {"text": "gagangnya muter. dari dalam."},
+    {"text": "dikunci.", "events": ["click@0.2", "impact@0.2"]},
+    {"text": "kamu sekarang di luar kamar kamu sendiri.", "hold": 0.3},
+    {"text": "terus siapa yang ada di dalam?", "red": true, "events": ["silence@end"]}
+  ],
+  "choice": {"a": "gedor pintu kamar kamu sendiri", "b": "lari ke kamar ibu kos",
+             "labelA": "GEDOR\nPINTUNYA", "labelB": "LARI KE\nIBU KOS",
+             "cardA": ["knob", [190, 280, 560, 1109]], "cardB": ["doorOpen", [240, 170, 560, 1109]]}
+}
