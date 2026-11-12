@@ -54,6 +54,10 @@ Season 2 can start in a new place (rumah ibu? asrama?) with the same entity rule
   on the floor outside, screen lit. You picked it up: an incoming call from "kamu" (your own number). From inside your room,
   behind you, something whispered in YOUR voice: "jangan diangkat." (02.31)
   Choice for Part 5: A = angkat teleponnya / B = balik badan, lihat ke kamar.
+- Part 5 (B, auto-picked): you turned around; your room was empty, your own phone glowing on the bed. 02.34-02.35 chat
+  from ibu kos: "13, kamu masih bangun?" / "ada yang ngetuk kamar saya." / "katanya dia kamu." / "suaranya persis suara kamu."
+  Ibu kos's room is at the end of the hallway; its light just came on: she is opening her door.
+  Choice for Part 6: A = bales "itu bukan aku, jangan dibuka!" / B = lari ke kamar ibu kos sekarang.
 
 ## Episode log
 | part | branch | posted | permalink | votes |
@@ -61,4 +65,5 @@ Season 2 can start in a new place (rumah ibu? asrama?) with the same entity rule
 | 1 | – | 2026-11-03 21:00 | https://www.instagram.com/reel/DfSDGuEP2tc/ | – |
 | 2 | B telepon ibu | 2026-11-09 08:50 | https://www.instagram.com/reel/DfgHPeEhOE_/ | A 1 · B 7 |
 | 3 | A bilang ke ibu | 2026-11-10 21:00 | https://www.instagram.com/reel/DfkEntKoLDr/ | auto (no screenshot) · 166 plays/21h, 7 % watched, 68 % skip |
-| 4 | B buka pintunya | 2026-11-11 21:00 | https://www.instagram.com/reel/DfmpbGITIdd/ | auto · new hook opening |
+| 4 | B buka pintunya | 2026-11-11 21:00 | https://www.instagram.com/reel/DfmpbGITIdd/ | auto · new hook opening · 152 plays/21h, 13 % watched, 49 % skip |
+| 5 | B balik badan | 2026-11-12 21:00 | https://www.instagram.com/reel/DfpONQZRTOP/ | auto |
