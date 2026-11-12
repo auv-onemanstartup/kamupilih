@@ -136,6 +136,7 @@ export function chat(ctx, u, { x = 90, y = 220, w = 900, h = 1120, name = 'ibu',
   const items = shown.map((m) => { const lines = wrap(m.text); return { m, lines, bh: lines.length * lineH + pad * 2 + 26, bw: Math.min(maxW, Math.max(...lines.map((l) => ctx.measureText(l).width)) + pad * 2 + (m.side === 'out' ? 60 : 10)) }; });
   if (isTyping) items.push({ typing: true, bh: 84, bw: 170 });
   // top-down like a real chat; once it overflows, scroll so the newest sits at the bottom (eased)
+  ctx.save(); ctx.beginPath(); ctx.rect(x, y + 150, w, h - 150); ctx.clip();   // body clip: scrolled bubbles never cover the header
   const top = y + 180, gap = 18;
   const total = items.reduce((a, it) => a + it.bh + gap, 0);
   const over = Math.max(0, total - (h - 220));
@@ -162,6 +163,7 @@ export function chat(ctx, u, { x = 90, y = 220, w = 900, h = 1120, name = 'ibu',
     }
     ctx.restore();
   }
+  ctx.restore();
   ctx.restore();
   return rects;
 }
