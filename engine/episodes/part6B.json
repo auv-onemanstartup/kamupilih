@@ -1,0 +1,24 @@
+{
+  "part": 6, "branch": "B", "winnerLabel": "LARI KE IBU KOS", "clock": "02.36",
+  "hook": "nama penghuni lama dicoret. ada nama kamu.",
+  "vote": {"mode": "auto", "labelA": "BALES CHATNYA", "labelB": "LARI KE IBU KOS"},
+  "beats": [
+    {"text": "kalian lagi yang milih ini.", "shot": {"type": "plate", "img": "doorOpen", "from": [470, 900, 1.0], "to": [515, 600, 1.9], "fx": ["lamp", "dust", "fog"], "hand": 1.5}},
+    {"text": "kamu lari ke ujung lorong."},
+    {"text": "lampu merahnya goyang makin kenceng.", "events": ["flash@1.2"]},
+    {"text": "pintu kamar ibu kos... kebuka.", "hold": 0.2},
+    {"text": "kosong.", "dur": 2.0, "events": ["sub@0.1"]},
+    {"text": "di meja, ada buku tamu kos.", "shot": {"type": "plate", "img": "book", "from": [470, 900, 1.05], "to": [470, 980, 1.5], "fx": ["dust"], "hand": 0.5}},
+    {"text": "kamu buka halaman kamar 13."},
+    {"text": "penghuni lama. namanya dicoret.", "dur": 2.6},
+    {"text": "tanggal keluar: kosong.", "red": true},
+    {"text": "di bawahnya, tulisan baru. tinta masih basah."},
+    {"text": "nama kamu.", "red": true, "events": ["impact@0.1"]},
+    {"text": "terus lampu lorong di belakang kamu mati.", "shot": {"type": "plate", "img": "doorOpen", "from": [515, 700, 1.6], "to": [500, 760, 1.4], "fx": ["dust"], "dark": 0.6, "hand": 1.0}, "events": ["lightOff@0.3"]},
+    {"text": "“13, ngapain di kamar saya?”", "red": true},
+    {"text": "suara ibu kos. dari arah kamar kamu.", "red": true, "events": ["silence@end"]}
+  ],
+  "choice": {"a": "sembunyi di kamar ibu kos", "b": "lari balik ke kamar 13",
+             "labelA": "SEMBUNYI\nDI SINI", "labelB": "LARI KE\nKAMAR 13",
+             "cardA": ["book", [190, 300, 560, 1109]], "cardB": ["doorOpen", [240, 170, 560, 1109]]}
+}

@@ -1,0 +1,24 @@
+{
+  "part": 6, "branch": "A", "winnerLabel": "BALES CHATNYA", "clock": "02.36",
+  "hook": "penghuni lama kamar 13 nggak pernah keluar.",
+  "vote": {"mode": "auto", "labelA": "BALES CHATNYA", "labelB": "LARI KE IBU KOS"},
+  "beats": [
+    {"text": "kalian lagi yang milih ini.", "shot": {"type": "phone", "ui": "chat", "name": "ibu kos"}},
+    {"text": "itu bukan aku, jangan dibuka!", "msg": {"side": "out", "text": "itu bukan aku, jangan dibuka!", "time": "02.36"}, "nosuper": true, "dur": 2.6},
+    {"text": "centang dua. biru.", "dur": 2.0},
+    {"text": "ibu kos ngetik... lama.", "typing": true, "dur": 3.0},
+    {"text": "telat.", "msg": {"side": "in", "text": "telat.", "time": "02.37"}, "nosuper": true, "dur": 2.0, "events": ["sub@0.1"]},
+    {"text": "dia udah masuk.", "msg": {"side": "in", "text": "dia udah masuk.", "time": "02.37"}, "nosuper": true, "dur": 2.2},
+    {"text": "13, kamu inget saya pernah bilang penghuni sebelum kamu pindah mendadak?", "typing": true, "msg": {"side": "in", "text": "13, kamu inget saya pernah bilang penghuni sebelum kamu pindah mendadak?", "time": "02.38"}, "nosuper": true, "dur": 4.2},
+    {"text": "saya bohong.", "msg": {"side": "in", "text": "saya bohong.", "time": "02.38"}, "nosuper": true, "dur": 2.2},
+    {"text": "dia nggak pernah keluar dari kamar 13.", "msg": {"side": "in", "text": "dia nggak pernah keluar dari kamar 13.", "time": "02.38"}, "nosuper": true, "dur": 3.0, "hold": 0.3},
+    {"text": "hp kamu mati sendiri.", "shot": {"type": "phone", "ui": "off", "zoom": [1.9, 1.3]}, "events": ["impact@0.1"]},
+    {"text": "terus... tok. tok. tok.", "shot": {"type": "plate", "img": "gapClose", "from": [470, 900, 1.1], "to": [560, 980, 1.5], "fx": ["dust", "fog"], "dark": 0.3}, "events": ["knock@0.4"], "dur": 2.6},
+    {"text": "“13, buka. ini ibu kos.”", "red": true},
+    {"text": "suara ibu kos. persis.", "shot": {"type": "knob"}, "events": ["turn@1.0"]},
+    {"text": "tapi tadi dia bilang... dia udah masuk.", "red": true, "events": ["silence@end"]}
+  ],
+  "choice": {"a": "buka, siapa tahu beneran ibu kos", "b": "intip lewat celah bawah pintu dulu",
+             "labelA": "BUKA\nPINTUNYA", "labelB": "INTIP\nCELAHNYA",
+             "cardA": ["knob", [190, 280, 560, 1109]], "cardB": ["gapClose", [190, 320, 560, 1109]]}
+}
