@@ -26,6 +26,7 @@ comments; the majority decides the next part.
 | 5 | outside help fails (ibu kos, a friend, security): they hear it too, or it uses their voice |
 | 6 | the truth: the previous tenant, why they left, what they let in |
 | 7 | finale: the last choice decides if you survive the night (choices can end the series here only) |
+| 8 | epilogue: the outcome of Part 7's choice (survive or not) + season 2 tease. Hold for the user's go-ahead (performance review). |
 Season 2 can start in a new place (rumah ibu? asrama?) with the same entity rules.
 
 ## Writing rules for every episode
@@ -58,6 +59,12 @@ Season 2 can start in a new place (rumah ibu? asrama?) with the same entity rule
   from ibu kos: "13, kamu masih bangun?" / "ada yang ngetuk kamar saya." / "katanya dia kamu." / "suaranya persis suara kamu."
   Ibu kos's room is at the end of the hallway; its light just came on: she is opening her door.
   Choice for Part 6: A = bales "itu bukan aku, jangan dibuka!" / B = lari ke kamar ibu kos sekarang.
+- Part 6 (B, auto-picked): you ran down the hallway, the red lamp swinging harder. Ibu kos's room was open and empty.
+  On the desk, the kos guestbook: page "kamar 13": the previous tenant's name crossed out, "tanggal keluar" empty, and under it,
+  in wet ink, YOUR name. The hallway light behind you went out; ibu kos's voice, from the direction of your room:
+  "13, ngapain di kamar saya?"
+  Choice for Part 7 (finale): A = sembunyi di kamar ibu kos / B = lari balik ke kamar 13.
+  NOTE for Part 7/8: the guestbook rule "dia cuma datang sampai jam 3" is introduced in Part 7 as something read in the book.
 
 ## Episode log
 | part | branch | posted | permalink | votes |
@@ -66,4 +73,5 @@ Season 2 can start in a new place (rumah ibu? asrama?) with the same entity rule
 | 2 | B telepon ibu | 2026-11-09 08:50 | https://www.instagram.com/reel/DfgHPeEhOE_/ | A 1 · B 7 |
 | 3 | A bilang ke ibu | 2026-11-10 21:00 | https://www.instagram.com/reel/DfkEntKoLDr/ | auto (no screenshot) · 166 plays/21h, 7 % watched, 68 % skip |
 | 4 | B buka pintunya | 2026-11-11 21:00 | https://www.instagram.com/reel/DfmpbGITIdd/ | auto · new hook opening · 152 plays/21h, 13 % watched, 49 % skip |
-| 5 | B balik badan | 2026-11-12 21:00 | https://www.instagram.com/reel/DfpONQZRTOP/ | auto |
+| 5 | B balik badan | 2026-11-12 21:00 | https://www.instagram.com/reel/DfpONQZRTOP/ | auto · 54 plays/21h, 8 % watched, 54 % skip |
+| 6 | B lari ke ibu kos | 2026-11-13 22:02 (vidIQ outage, 1 h late) | https://www.instagram.com/reel/Dfr5-RmBUIy/ | auto |
