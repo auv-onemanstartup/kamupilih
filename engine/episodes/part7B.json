@@ -1,0 +1,26 @@
+{
+  "part": 7, "branch": "B", "winnerLabel": "LARI KE KAMAR 13", "clock": "02.56",
+  "hook": "suara kamu sendiri bilang: jangan keluar.",
+  "vote": {"mode": "auto", "labelA": "SEMBUNYI DI SINI", "labelB": "LARI KE KAMAR 13"},
+  "beats": [
+    {"text": "kalian lagi yang milih ini.", "shot": {"type": "plate", "img": "doorOpen", "from": [505, 700, 1.7], "to": [470, 900, 1.0], "fx": ["dust", "flicker"], "dark": 0.4, "hand": 1.5}},
+    {"text": "kamu lari balik ke kamar 13. gelap."},
+    {"text": "kamu masuk, kunci pintu.", "shot": {"type": "knob"}, "events": ["turn@0.3", "click@1.6"]},
+    {"text": "jam 02.56.", "shot": {"type": "phone", "ui": "lock", "zoom": [1.6, 1.95]}, "time": "02.56"},
+    {"text": "kata buku tamu: dia cuma datang sampai jam 3.", "dur": 3.4},
+    {"text": "hp kamu bunyi.", "shot": {"type": "phone", "ui": "call", "name": "bapak"}, "events": ["ring@0.1"]},
+    {"text": "nomor bapak.", "events": ["ringStop@end"]},
+    {"text": "kamu angkat.", "events": ["pickup@0.2"], "time": "02.58"},
+    {"text": "“nak, ibu sama bapak di depan gerbang kos!”"},
+    {"text": "“cepet keluar, di dalam bahaya!”"},
+    {"text": "tok. tok. tok.", "shot": {"type": "plate", "img": "gapWide", "from": [470, 900, 1.0], "to": [560, 1000, 1.35], "fx": ["dust", "fog"], "dark": 0.3, "hand": 0.9}, "events": ["knock@0.1"], "dur": 2.4},
+    {"text": "dari pintu kamar kamu."},
+    {"text": "terus suara kamu sendiri, dari balik pintu:", "time": "02.59"},
+    {"text": "“jangan keluar. itu bukan bapak.”", "red": true},
+    {"text": "dua-duanya bilang mereka yang asli.", "dur": 2.6},
+    {"text": "satu menit lagi jam 3.", "red": true, "events": ["silence@end"]}
+  ],
+  "choice": {"a": "percaya telepon, keluar ke gerbang", "b": "percaya suara kamu, diam sampai jam 3",
+             "labelA": "KELUAR KE\nGERBANG", "labelB": "DIAM\nSAMPAI JAM 3",
+             "cardA": ["doorOpen", [240, 170, 560, 1109]], "cardB": ["knob", [190, 280, 560, 1109]]}
+}

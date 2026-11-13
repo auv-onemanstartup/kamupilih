@@ -1,0 +1,26 @@
+{
+  "part": 7, "branch": "A", "winnerLabel": "SEMBUNYI DI SINI", "clock": "02.56",
+  "hook": "dia punya semua suara yang kamu sayang.",
+  "vote": {"mode": "auto", "labelA": "SEMBUNYI DI SINI", "labelB": "LARI KE KAMAR 13"},
+  "beats": [
+    {"text": "kalian lagi yang milih ini.", "shot": {"type": "knob"}, "events": ["turn@0.6"]},
+    {"text": "kamu kunci pintu kamar ibu kos dari dalam.", "events": ["click@0.8"]},
+    {"text": "jam 02.56.", "shot": {"type": "phone", "ui": "lock", "zoom": [1.6, 1.95]}, "time": "02.56"},
+    {"text": "kata penghuni lama di buku tamu: dia cuma datang sampai jam 3.", "dur": 4.0},
+    {"text": "empat menit lagi.", "dur": 2.2},
+    {"text": "tok. tok. tok.", "shot": {"type": "plate", "img": "gapClose", "from": [470, 900, 1.1], "to": [600, 985, 1.9], "fx": ["dust"], "dark": 0.35, "hand": 0.8}, "events": ["knock@0.1"], "dur": 2.4},
+    {"text": "“nak, ini ibu.”", "red": true},
+    {"text": "“13, ini ibu kos.”", "red": true},
+    {"text": "terus... suara kamu sendiri.", "dur": 2.4},
+    {"text": "“buka. aku capek di luar.”", "red": true},
+    {"text": "dia punya semua suara orang yang kamu sayang.", "time": "02.59"},
+    {"text": "jam 02.59.", "shot": {"type": "phone", "ui": "lock"}, "events": ["buzz@0.6", "notif@0.6"], "notif": {"title": "bapak", "body": "nak, ibu sama bapak di depan gerbang"}},
+    {"text": "pesan dari nomor bapak.", "shot": {"type": "phone", "ui": "chat", "name": "bapak"}},
+    {"text": "nak, ibu sama bapak udah di depan gerbang kos. bukain.", "msg": {"side": "in", "text": "nak, ibu sama bapak udah di depan gerbang kos. bukain.", "time": "02.59"}, "nosuper": true, "dur": 3.4},
+    {"text": "ketukannya berhenti.", "shot": {"type": "plate", "img": "gapClose", "from": [600, 985, 1.9], "to": [610, 990, 2.3], "fx": ["dust"], "dark": 0.5}, "dur": 2.4},
+    {"text": "satu menit lagi jam 3.", "red": true, "events": ["silence@end"]}
+  ],
+  "choice": {"a": "tunggu sampai lewat jam 3, jangan buka apa pun", "b": "keluar, bukain gerbang buat ibu dan bapak",
+             "labelA": "TUNGGU\nJAM 3", "labelB": "BUKAIN\nGERBANG",
+             "cardA": ["phone", [170, 640, 560, 1109]], "cardB": ["doorOpen", [240, 170, 560, 1109]]}
+}
