@@ -65,6 +65,11 @@ Season 2 can start in a new place (rumah ibu? asrama?) with the same entity rule
   "13, ngapain di kamar saya?"
   Choice for Part 7 (finale): A = sembunyi di kamar ibu kos / B = lari balik ke kamar 13.
   NOTE for Part 7/8: the guestbook rule "dia cuma datang sampai jam 3" is introduced in Part 7 as something read in the book.
+- Part 7 FINALE (B, auto-picked): you ran back to room 13 in the dark and locked the door. 02.56; the guestbook said it only
+  comes until 3. Your phone rang: "bapak". You answered (02.58): "nak, ibu sama bapak di depan gerbang kos! cepet keluar,
+  di dalam bahaya!" Three knocks on your door; then your own voice from behind it (02.59): "jangan keluar. itu bukan bapak."
+  Both claim to be real. One minute to 3.
+  Final choice: A = percaya telepon, keluar ke gerbang / B = percaya suara kamu, diam sampai jam 3. Part 8 = the outcome.
 
 ## Episode log
 | part | branch | posted | permalink | votes |
@@ -74,4 +79,5 @@ Season 2 can start in a new place (rumah ibu? asrama?) with the same entity rule
 | 3 | A bilang ke ibu | 2026-11-10 21:00 | https://www.instagram.com/reel/DfkEntKoLDr/ | auto (no screenshot) · 166 plays/21h, 7 % watched, 68 % skip |
 | 4 | B buka pintunya | 2026-11-11 21:00 | https://www.instagram.com/reel/DfmpbGITIdd/ | auto · new hook opening · 152 plays/21h, 13 % watched, 49 % skip |
 | 5 | B balik badan | 2026-11-12 21:00 | https://www.instagram.com/reel/DfpONQZRTOP/ | auto · 54 plays/21h, 8 % watched, 54 % skip |
-| 6 | B lari ke ibu kos | 2026-11-13 22:02 (vidIQ outage, 1 h late) | https://www.instagram.com/reel/Dfr5-RmBUIy/ | auto |
+| 6 | B lari ke ibu kos | 2026-11-13 22:02 (vidIQ outage, 1 h late) | https://www.instagram.com/reel/Dfr5-RmBUIy/ | auto · 137 plays/20h, 8 % watched, 56 % skip |
+| 7 | B lari ke kamar 13 (FINALE) | 2026-11-14 21:00 | https://www.instagram.com/reel/DfuX0qzB2Q1/ | auto · automation paused after this, waiting for the user |
